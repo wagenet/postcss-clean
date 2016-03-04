@@ -1,0 +1,54 @@
+{
+  "name": "postcss-clean",
+  "version": "0.1.0",
+  "description": "PostCSS plugin to minify CSS with clean-css",
+  "author": {
+    "name": "Leo Di Donato",
+    "email": "leodidonato@gmail.com",
+    "url": "http://git.io/leodido"
+  },
+  "license": "MIT",
+  "repository": "leodido/postcss-clean",
+  "bugs": {
+    "url": "https://github.com/leodido/postcss-clean/issues"
+  },
+  "homepage": "https://github.com/leodido/postcss-clean",
+  "main": "index.js",
+  "jsnext:main": "src/index.js",
+  "dependencies": {
+    "clean-css": "^3.4.10",
+    "postcss": "^5.0.19"
+  },
+  "devDependencies": {
+    "ava": "^0.12.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "es6-promise": "^3.1.2",
+    "eslint": "^2.2.0",
+    "eslint-config-defaults": "^9.0.0",
+    "rollup": "^0.25.4",
+    "rollup-plugin-babel": "^2.4.0"
+  },
+  "scripts": {
+    "prepublish": "./node_modules/.bin/rollup -c rollup.config.js",
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "test": "ava && npm run lint"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-defaults"
+  },
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "clean-css",
+    "minifier",
+    "minify",
+    "minification",
+    "optimisation",
+    "optimization",
+    "optimise",
+    "optimize",
+    "compress",
+    "compression"
+  ]
+}
