@@ -21,20 +21,34 @@
   },
   "devDependencies": {
     "ava": "^0.12.0",
+    "babel-eslint": "^5.0.0",
     "babel-preset-es2015-rollup": "^1.1.1",
     "es6-promise": "^3.1.2",
     "eslint": "^2.2.0",
-    "eslint-config-defaults": "^9.0.0",
     "rollup": "^0.25.4",
     "rollup-plugin-babel": "^2.4.0"
   },
   "scripts": {
-    "prepublish": "./node_modules/.bin/rollup -c rollup.config.js",
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "test": "ava && npm run lint"
+    "test": "./node_modules/.bin/ava --verbose --serial",
+    "prebuild": "npm run lint",
+    "build": "./node_modules/.bin/rollup -c rollup.config.js",
+    "pretest": "npm run lint",
+    "prepublish": "npm run build"
   },
   "eslintConfig": {
-    "extends": "eslint-config-defaults"
+    "extends": "eslint-config-defaults",
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "globals": {
+      "Promise": true
+    },
+    "env": {
+      "node": true
+    }
   },
   "keywords": [
     "postcss",
