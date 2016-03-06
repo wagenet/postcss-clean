@@ -88,7 +88,7 @@ MIT © Leonardo Di Donato
 
 ---
 
-[![Analytics](https://ga-beacon.appspot.com/UA-49657176-1/postcss-clean)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-49657176-1/postcss-clean?flat)](https://github.com/igrigorik/ga-beacon)
 
 [clean-css]:       http://github.com/jakubpawlowicz/clean-css
 [clean-css-opts]:  https://github.com/jakubpawlowicz/clean-css/tree/3.4#how-to-use-clean-css-api
