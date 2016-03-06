@@ -1,6 +1,6 @@
 {
   "name": "postcss-clean",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "description": "PostCSS plugin to minify CSS with clean-css",
   "author": {
     "name": "Leo Di Donato",
