@@ -29,10 +29,10 @@
     "rollup-plugin-babel": "^2.4.0"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src/*.js test.js",
+    "lint": "eslint src/*.js test.js",
     "pretest": "npm run lint",
-    "test": "./node_modules/.bin/ava --verbose --serial",
-    "build": "./node_modules/.bin/rollup -c rollup.config.js",
+    "test": "ava --verbose --serial",
+    "build": "rollup -c rollup.config.js",
     "prepublish": "npm run build"
   },
   "eslintConfig": {
