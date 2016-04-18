@@ -14,24 +14,26 @@
   },
   "homepage": "https://github.com/leodido/postcss-clean",
   "main": "index.js",
+  "jsnext:main": "src/index.m.js",
   "dependencies": {
     "clean-css": "^3.4.10",
     "postcss": "^5.0.19"
   },
   "devDependencies": {
-    "ava": "^0.12.0",
-    "babel-eslint": "^5.0.0",
-    "babel-preset-es2015-rollup": "^1.1.1",
-    "eslint": "2.2.0",
-    "eslint-config-defaults": "^9.0.0",
-    "rollup": "^0.25.4",
-    "rollup-plugin-babel": "^2.4.0"
+    "ava": "0.14.x",
+    "babel-eslint": "6.0.x",
+    "babel-preset-es2015-rollup": "1.1.x",
+    "eslint": "2.8.x",
+    "eslint-config-defaults": "9.0.x",
+    "rollup": "0.25.x",
+    "rollup-plugin-babel": "2.4.x"
   },
   "scripts": {
-    "lint": "eslint src/*.js test.js",
-    "pretest": "npm run lint",
-    "test": "ava --verbose --serial",
+    "clean": "rm -f index.js",
+    "lint": "eslint index.m.js test.js",
     "build": "rollup -c rollup.config.js",
+    "pretest": "npm run lint && npm run build",
+    "test": "ava --verbose --serial",
     "prepublish": "npm run build"
   },
   "eslintConfig": {
