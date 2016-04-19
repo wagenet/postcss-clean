@@ -4,14 +4,16 @@
 
 import babel from 'rollup-plugin-babel';
 
-const inDevelopment = () => process.env.BUILD_ENV && ['development', 'dev', 'develop'].indexOf(process.env.BUILD_ENV.toLowerCase()) >= 0
+function inDevelopment() {
+  return process.env.BUILD_ENV && ['development', 'dev', 'develop'].indexOf(process.env.BUILD_ENV.toLowerCase()) >= 0
+}
 
-const babelOpts = {
+var babelOpts = {
   presets: ['es2015-rollup'],
   exclude: 'node_modules/**'
 }
 
-const rollupOpts = {
+var rollupOpts = {
   entry: 'index.m.js',
   format: 'cjs',
   plugins: [ babel(babelOpts) ],

@@ -35,7 +35,7 @@
     "rollup-plugin-babel": "2.4.x"
   },
   "scripts": {
-    "clean": "rm -f index.js && rm -rf coverage .nyc_output",
+    "clean": "rm -f index.js *.log && rm -rf coverage .nyc_output",
     "lint": "eslint index.m.js test.js rollup.config.js",
     "develop": "BUILD_ENV=dev rollup -c rollup.config.js",
     "distrib": "rollup -c rollup.config.js",
@@ -44,7 +44,7 @@
     "coverage": "nyc report --cache --reporter=lcov | coveralls",
     "report": "nyc report --reporter=html",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
-    "prepublish": "npm run distrib"
+    "prepublish": "npm run changelog && npm run distrib"
   },
   "ava": {
     "require": [
