@@ -41,10 +41,10 @@
     "distrib": "rollup -c rollup.config.js",
     "pretest": "npm run lint && npm run develop",
     "test": "nyc ava --verbose --serial",
-    "coverage": "nyc report --cache --reporter=lcov | coveralls",
+    "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
     "report": "nyc report --reporter=html",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
-    "prepublish": "npm run changelog && npm run distrib"
+    "prepublish": "npm run distrib"
   },
   "ava": {
     "require": [
