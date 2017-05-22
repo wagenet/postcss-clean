@@ -2,22 +2,30 @@
 
 /* global process */
 
-import babel from 'rollup-plugin-babel';
+import buble from 'rollup-plugin-buble'
+import { sync as pkg } from 'read-pkg'
 
 function inDevelopment() {
   return process.env.BUILD_ENV && ['development', 'dev', 'develop'].indexOf(process.env.BUILD_ENV.toLowerCase()) >= 0
 }
 
-var babelOpts = {
-  presets: ['es2015-rollup'],
-  exclude: 'node_modules/**'
-}
+const {
+  main: dst,
+  "jsnext:main": src,
+  dependencies: dep
+} = pkg('./package.json')
 
-var rollupOpts = {
-  entry: 'index.m.js',
+const rollupOpts = {
+  entry: src,
   format: 'cjs',
-  plugins: [ babel(babelOpts) ],
-  dest: 'index.js'
+  external: Object.keys(dep),
+  plugins: [
+    buble({
+      include: src,
+      transforms: { dangerousForOf: true }
+    })
+  ],
+  dest: dst
 }
 
 if (inDevelopment()) {
