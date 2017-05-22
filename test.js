@@ -1,16 +1,16 @@
 import test from 'ava';
 import postcss from 'postcss';
 import plugin from './';
-import cleancss from 'clean-css'
+import CleanCss from 'clean-css'
 
 // Test that postcss plugin works like clean-css
 
 async function arun(t, input, opts = {}) {
   const result = await postcss([plugin(opts)]).process(input)
-  const output = new cleancss(opts).minify(input).styles
+  const output = new CleanCss(opts).minify(input).styles
 
-  t.same(result.css, output)
-  t.same(result.warnings().length, 0);
+  t.deepEqual(result.css, output)
+  t.deepEqual(result.warnings().length, 0);
 }
 
 const colors = [
