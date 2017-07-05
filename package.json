@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/leodido/postcss-clean",
   "main": "index.js",
-  "jsnext:main": "index.m.js",
+  "module": "index.m.js",
   "dependencies": {
     "clean-css": "3.4.x",
     "postcss": "5.0.x"

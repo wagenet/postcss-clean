@@ -11,7 +11,7 @@ function inDevelopment() {
 
 const {
   main: dst,
-  "jsnext:main": src,
+  module: src,
   dependencies: dep
 } = pkg('./package.json')
 
