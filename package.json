@@ -43,8 +43,13 @@
     "test": "nyc ava --verbose --serial",
     "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
     "report": "nyc report --reporter=html",
+    "prepublish": "npm run distrib",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
-    "prepublish": "npm run distrib"
+    "changelog:edit": "$(git var GIT_EDITOR) CHANGELOG.md",
+    "from:master": "[ $(git symbolic-ref -q HEAD --short) = \"master\" ]",
+    "preversion": "npm run from:master && npm run distrib",
+    "version": "npm run changelog && npm run changelog:edit && git add CHANGELOG.md",
+    "postversion": "git push && git push --tags && git checkout develop && git merge master && git push && git checkout master"
   },
   "eslintConfig": {
     "extends": "eslint-config-defaults",
