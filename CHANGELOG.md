@@ -1,3 +1,14 @@
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/leodido/postcss-clean/compare/v1.0.3...v1.0.4) (2017-09-15)
+
+
+### Upgrade
+
+* Dependencies lock file ([8fa0aed770f4923f2cfea9e18735742c9041a0b0](https://github.com/leodido/postcss-clean/commit/8fa0aed770f4923f2cfea9e18735742c9041a0b0))
+* Use caret ranges for broader dependency matching ([5e9b76128a9171d5e8a2cbdddbd30bcdf8dc74dd](https://github.com/leodido/postcss-clean/commit/5e9b76128a9171d5e8a2cbdddbd30bcdf8dc74dd))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/leodido/postcss-clean/compare/v1.0.2...v1.0.3) (2017-07-06)
 
