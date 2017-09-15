@@ -1,3 +1,14 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/leodido/postcss-clean/compare/v1.0.4...v1.1.0) (2017-09-15)
+
+
+### Upgrade
+
+* Dependencies upgraded to support clean-css versions >=4.0.0 and <5.0.0  ([f526ae72b3e90a2a1557c083708ccd03a8bf5506](https://github.com/leodido/postcss-clean/commit/f526ae72b3e90a2a1557c083708ccd03a8bf5506)), closes [#26](https://github.com/leodido/postcss-clean/issues/26)
+* Dependencies upgraded to support postcss versions >=6.0.0 and <7.0.0 ([0ecf2666296a09081c24df04f2c594f01f6c9915](https://github.com/leodido/postcss-clean/commit/0ecf2666296a09081c24df04f2c594f01f6c9915))
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/leodido/postcss-clean/compare/v1.0.3...v1.0.4) (2017-09-15)
 
