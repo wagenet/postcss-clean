@@ -20,7 +20,7 @@
   "module": "index.m.js",
   "dependencies": {
     "clean-css": "^4.x",
-    "postcss": "^5.0"
+    "postcss": "^6.x"
   },
   "devDependencies": {
     "ava": "^0.18",
