@@ -19,7 +19,7 @@
   "main": "index.js",
   "module": "index.m.js",
   "dependencies": {
-    "clean-css": "^3.4",
+    "clean-css": "^4.x",
     "postcss": "^5.0"
   },
   "devDependencies": {
