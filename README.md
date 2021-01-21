@@ -8,7 +8,7 @@ Compression will be handled by **[clean-css][clean-css]**, which according to [t
 
 With [npm](https://npmjs.org/package/postcss-clean) do:
 
-```
+```console
 npm install postcss-clean --save
 ```
 
