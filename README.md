@@ -14,7 +14,7 @@ npm install postcss-clean --save
 
 ## Example
 
-### Input
+### Input 1
 
 ```css
 .try {
@@ -23,13 +23,13 @@ npm install postcss-clean --save
 }
 ```
 
-### Output
+### Output 1
 
 ```css
 .try{color:#607d8b;width:32px}
 ```
 
-### Input
+### Input 2
 
 ```css
 :host {
@@ -43,7 +43,7 @@ npm install postcss-clean --save
 }
 ```
 
-### Output
+### Output 2
 
 ```css
 :host{display:block}:host ::content>*{color:var(--my-color)}
