@@ -1,3 +1,21 @@
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/leodido/postcss-clean/compare/v1.1.0...v1.2.1) (2021-01-22)
+
+
+### CI
+
+* Do not consider the develop branch when releasing ([be9fac675cd44688f715c785083d876568fd63c3](https://github.com/leodido/postcss-clean/commit/be9fac675cd44688f715c785083d876568fd63c3))
+* Upgrade node versions into TravisCI YAML file ([9f01583ccfbf180d6f852f08e806401ea7e8d8d6](https://github.com/leodido/postcss-clean/commit/9f01583ccfbf180d6f852f08e806401ea7e8d8d6))
+
+### Build
+
+* Bump handlebars from 4.0.10 to 4.7.6 ([ed39c7b69fb1adb316f29b86d327e8e2ce58f9c5](https://github.com/leodido/postcss-clean/commit/ed39c7b69fb1adb316f29b86d327e8e2ce58f9c5))
+* Bump ini from 1.3.4 to 1.3.8 ([20413ba38f575ad27de922184acbd55c38116dce](https://github.com/leodido/postcss-clean/commit/20413ba38f575ad27de922184acbd55c38116dce))
+* Bump is-my-json-valid from 2.16.0 to 2.20.5 ([9fb6dceaf3f821d94a30dcb198173a1390618486](https://github.com/leodido/postcss-clean/commit/9fb6dceaf3f821d94a30dcb198173a1390618486))
+* Bump lodash from 4.17.4 to 4.17.20 ([af9a1a66d8ce9e1bc9e7d302d2628be53f418d6a](https://github.com/leodido/postcss-clean/commit/af9a1a66d8ce9e1bc9e7d302d2628be53f418d6a))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/leodido/postcss-clean/compare/v1.0.4...v1.1.0) (2017-09-15)
 
