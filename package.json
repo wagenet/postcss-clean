@@ -49,7 +49,7 @@
     "from:master": "[ $(git symbolic-ref -q HEAD --short) = \"master\" ]",
     "preversion": "npm run from:master && npm run distrib",
     "version": "npm run changelog && npm run changelog:edit && git add CHANGELOG.md",
-    "postversion": "git push && git push --tags && git checkout develop && git merge master && git push && git checkout master"
+    "postversion": "git push && git push --tags"
   },
   "eslintConfig": {
     "extends": "eslint-config-defaults",
