@@ -202,3 +202,10 @@ const mediaqueries = new Map()
 for (let [descr, input] of mediaqueries.entries()) {
   test(`should process ${descr}`, t => arun(t, input))
 }
+
+const tidyselectors = new Map()
+  .set('not optimize selectors', '#shadow::part(a) { color: red; }#shadow::part(a b) { font-weight: bold; }#shadow::part(a b c) { font-size: large; }') // '#shadow::part(a){color:red}#shadow::part(a b){font-weight:700}#shadow::part(a b c){font-size:large}'
+
+for (let [descr, input] of tidyselectors.entries()) {
+  test(`should ${descr} when tidy selectors is off`, t => arun(t, input, { level: { 1: { tidySelectors: false } } }))
+}
