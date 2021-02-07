@@ -46,8 +46,7 @@
     "prepublish": "npm run distrib",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
     "changelog:edit": "$(git var GIT_EDITOR) CHANGELOG.md",
-    "from:master": "[ $(git symbolic-ref -q HEAD --short) = \"master\" ]",
-    "preversion": "npm run from:master && npm run distrib",
+    "preversion": "npm run distrib",
     "version": "npm run changelog && npm run changelog:edit && git add CHANGELOG.md",
     "postversion": "git push && git push --tags"
   },
@@ -70,6 +69,7 @@
     "css",
     "postcss-plugin",
     "clean-css",
+    "cleancss",
     "minifier",
     "minify",
     "minification",
