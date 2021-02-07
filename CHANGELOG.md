@@ -1,3 +1,36 @@
+<a name="1.2.2"></a>
+## [1.2.2](https://github.com/leodido/postcss-clean/compare/v1.2.1...v1.2.2) (2021-02-07)
+
+
+### Build
+
+* Refinements to the coverage npm script ([56650c894c4938b8c4b1a6eb2e1e212a6b2feab0](https://github.com/leodido/postcss-clean/commit/56650c894c4938b8c4b1a6eb2e1e212a6b2feab0))
+
+### CI
+
+* Remove TravisCI ([d5536b5c343aed7f7ba9f89f936ec5172f32d7fe](https://github.com/leodido/postcss-clean/commit/d5536b5c343aed7f7ba9f89f936ec5172f32d7fe))
+* Setup GitHub Actions ([a65c975930fab0b0dae12b4431092b574dbd2ac8](https://github.com/leodido/postcss-clean/commit/a65c975930fab0b0dae12b4431092b574dbd2ac8))
+
+### Docs
+
+* Github Actions badge ([720324e8f6987cca83f2607aac7a3133b056a43b](https://github.com/leodido/postcss-clean/commit/720324e8f6987cca83f2607aac7a3133b056a43b))
+
+### Update
+
+* Test disabling tidySelector option ([0cb1badab167447f96ce30fc94626e08c892f7ba](https://github.com/leodido/postcss-clean/commit/0cb1badab167447f96ce30fc94626e08c892f7ba))
+
+### Upgrade
+
+* Bump clean-css from 4.1.8 to 4.1.11 ([7d584743172b710c3b8c48cc0e92539123c019c1](https://github.com/leodido/postcss-clean/commit/7d584743172b710c3b8c48cc0e92539123c019c1))
+* Bump debug from 2.6.8 to 2.6.9 ([c86face5f3aa84bd3616159123a77a54bc6ca862](https://github.com/leodido/postcss-clean/commit/c86face5f3aa84bd3616159123a77a54bc6ca862))
+* Bump extend from 3.0.1 to 3.0.2 ([c7b74f5eccbbb2cae702f7caffcd71b9dba35df2](https://github.com/leodido/postcss-clean/commit/c7b74f5eccbbb2cae702f7caffcd71b9dba35df2))
+* Bump lodash.template from 4.4.0 to 4.5.0 ([b5c7a88c3c36f3998f708277da9d0a7df5c3e1bc](https://github.com/leodido/postcss-clean/commit/b5c7a88c3c36f3998f708277da9d0a7df5c3e1bc))
+* Bump sshpk from 1.13.0 to 1.16.1 ([6485b976aa7ad581d4a3d196c11418bf5b53a67c](https://github.com/leodido/postcss-clean/commit/6485b976aa7ad581d4a3d196c11418bf5b53a67c))
+* Bump stringstream from 0.0.5 to 0.0.6 ([635b75d0d552f8daca2ae4f07d9e1523791522d7](https://github.com/leodido/postcss-clean/commit/635b75d0d552f8daca2ae4f07d9e1523791522d7))
+* Bump tar from 2.2.1 to 2.2.2 ([5d106da94193ac76452b92531873f5847e90bd86](https://github.com/leodido/postcss-clean/commit/5d106da94193ac76452b92531873f5847e90bd86))
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/leodido/postcss-clean/compare/v1.1.0...v1.2.1) (2021-01-22)
 
